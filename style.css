@@ -107,6 +107,16 @@ footer {
     border-radius: 25px;
     background-color: rgba(0,3,176,1.00);
     margin-right: 100px;
+    display: flex;
+	justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.wzor:hover {
+    background-color: rgb(46, 186, 79);
 }
 
 @media (max-width: 768px) {

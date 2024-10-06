@@ -1,0 +1,153 @@
+body {
+    margin: 0; 
+    font-family: 'Montserrat', sans-serif; 
+    background-color: #white;
+}
+
+.top {
+    display: flex;
+    margin-top: 40px;
+	margin-bottom: 40px;
+	justify-content: center;
+	gap:200px;
+    align-items: center; 
+	flex-wrap: wrap;
+}
+
+.zdjecie {
+    width: 400px; 
+    height: 400px; 
+    overflow: hidden; 
+    border-radius: 50%;
+}
+
+.zdjecie img {
+    width: 108%; 
+    height: auto; 
+    display: block; 
+}
+
+.opis {
+    width: 30%; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    box-sizing: border-box; 
+    font-size: 18px;
+}
+.opis b{
+	color: rgba(0,3,176,1.00);
+}
+
+.mid {
+    background-color: rgba(0,3,176,1.00);
+    color: white;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px; 
+    padding-bottom: 40px;
+}
+
+.mid h1 {
+    padding-bottom: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    width: 300px; 
+    margin: 10px;
+    font-size: 18px;
+}
+
+.ikona {
+    margin-bottom: 10px; 
+}
+
+footer {
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap; 
+    margin-top: 30px;
+	gap: 11vw;
+}
+
+.footer_left {
+	display: flex;
+	align-items: center;
+	gap: 80px;
+	flex-wrap: wrap;
+}
+.footer_left h1{
+	font-size: 36px;
+}
+.footer_right {
+	padding-bottom: 20px;
+}
+.footer_right b{
+	color: rgba(0,3,176,1.00);
+}
+
+
+.wzor {
+    margin-top: 10px; 
+    width: 300px;
+    height: 60px; 
+    border-radius: 25px;
+    background-color: rgba(0,3,176,1.00);
+    margin-right: 100px;
+}
+
+@media (max-width: 768px) {
+    .top {
+		justify-content: center;
+		gap:10vw;
+    }
+	.top_left{
+		display: flex;
+		justify-content: center;
+	}
+	.opis{
+		width: 90%;
+	}
+
+    .zdjecie {
+        width: 90%; 
+        height: 90%; 
+    }
+
+    .mid {
+        padding: 10px; 
+    }
+	
+	footer {
+		gap: 5vw;
+	}
+
+    .wzor {
+        margin: 0;
+    }
+
+    .footer_left, .footer_right {
+        width: 100%; 
+        align-items: center; 
+		justify-content: center;
+		gap: 0;
+		text-align: center;
+    }
+
+    .footer_left h1, .footer_right h2 {
+        text-align: center; 
+    }
+}
